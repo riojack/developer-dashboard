@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Developer Dashboard</title>
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/vendor/bootstrap-icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+  <div class="container-fluid db-container">
+    <div class="row">
+      <div class="col db-flex-me-col">
+        <div class="db-pane-fluid">
+          <h1 class="display-5 db-title-row-1">Developer's</h1>
+          <h1 class="display-1 db-title-row-2">Dashboard</h1>
+        </div>
+        <div class="db-pane" data-pane="notes">
+          <h1 class="display-6 db-pane-title">Notes</h1>
+          <div class="input-group mb-3 db-input-group">
+            <button type="button" class="btn btn-primary db-note-add" data-bs-enable="popover">&plus;</button>
+            <span class="input-group-text"><i class="bi bi-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search notes" aria-label="Search notes">
+          </div>
+        </div>
+        <div class="db-pane" data-pane="bookmarks">
+          <h1 class="display-6 db-pane-title">Bookmarks</h1>
+          <div class="input-group mb-3 db-input-group">
+            <button type="button" class="btn btn-primary db-bookmark-add" data-bs-enable="popover">&plus;</button>
+            <span class="input-group-text"><i class="bi bi-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search bookmarks" aria-label="Search bookmarks">
+          </div>
+        </div>
+      </div>
+      <div class="col db-flex-me-col">
+        <div class="db-pane">
+          <h1 class="display-6 db-pane-title">Health</h1>
+          <ul class="list-group">
+            <li class="list-group-item d-flex align-items-center">
+              <span class="badge me-1 bg-success rounded-pill">DEV</span>
+              <span class="badge me-1 bg-success rounded-pill">TEST</span>
+              <span class="badge me-3 bg-success rounded-pill">PROD</span>
+              Service Alpha
+              <span class="text-black-50 ms-2 db-fs-smaller">Handles alpha things.</span>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <span class="badge me-1 bg-warning rounded-pill">DEV</span>
+              <span class="badge me-1 bg-warning rounded-pill">TEST</span>
+              <span class="badge me-3 bg-warning rounded-pill">PROD</span>
+              Service Bravo
+              <span class="text-black-50 ms-2 db-fs-smaller">Handles bravo things.</span>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <span class="badge me-1 bg-danger rounded-pill">DEV</span>
+              <span class="badge me-1 bg-danger rounded-pill">TEST</span>
+              <span class="badge me-3 bg-danger rounded-pill">PROD</span>
+              Service Charlie
+              <span class="text-black-50 ms-2 db-fs-smaller">Handles charlie things.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="db-pane">
+          <h1 class="display-6 db-pane-title">Clocks</h1>
+          <div class="card mx-2 mb-1">
+            <div class="card-body">
+              <h4><i class="bi bi-clock me-2"></i>14:59:23 US/Central</h4>
+            </div>
+          </div>
+          <div class="card mx-2 mb-1">
+            <div class="card-body">
+              <h4><i class="bi bi-clock me-2"></i>19:59:23 GMT</h4>
+            </div>
+          </div>
+        </div>
+        <div class="db-pane">
+          <h1 class="display-6 db-pane-title">Tools</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="application/javascript" src="javascript/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script type="application/javascript">
+    (function () {
+      function makeContent() {
+        const inputEl = document.createElement('input');
+        inputEl.setAttribute('type', 'text');
+        inputEl.setAttribute('class', 'form-control');
+
+        const inputGrp = document.createElement('div');
+        inputGrp.setAttribute('class', 'input-group');
+
+        inputGrp.appendChild(inputEl);
+
+        return inputGrp;
+      }
+
+      const popoverEnabledElements = Array.from(document.querySelectorAll('[data-bs-enable="popover"]'));
+      popoverEnabledElements.map((el) => {
+        return new bootstrap.Popover(el, { container: 'body', html: true, content: makeContent });
+      });
+    })();
+  </script>
+</body>
+
+</html>

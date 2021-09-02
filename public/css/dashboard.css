@@ -1,0 +1,73 @@
+:root {
+  --db-transparent: rgba(0, 0, 0, 0);
+  --db-pane-hover-border-color: rgba(0,0,0,0.08);
+  --db-pane-hover-bg-color: rgba(0,0,0,0.05);
+  --db-pane-border-radius: 7px;
+  --db-pane-title-color: rgba(33, 37, 41, 0.4);
+
+  --db-transition-timing: 0.15s;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.db-fs-smaller {
+  font-size: 85%;
+}
+
+.db-container {
+  height: 100%;
+  min-width: 985px;
+}
+
+.db-title-row-1, .db-title-row-2 {
+  line-height: 0.9;
+}
+.db-title-row-1 {
+  margin-bottom: 0;
+}
+.db-title-row-2 {
+  margin-bottom: 2.2rem;
+}
+
+.db-pane,.db-pane-fluid {
+  width: 100%;
+  min-height: 300px;
+  border-radius: var(--db-pane-border-radius);
+  background-color: var(--db-transparent);
+
+  transition: background-color var(--db-transition-timing);
+}
+
+.db-pane:hover, .db-pane-fluid:hover {
+  background-color: var(--db-pane-hover-bg-color);
+}
+
+.db-pane-fluid {
+  min-height: 0;
+}
+
+.db-pane-title {
+  color: var(--db-pane-title-color);
+}
+
+.db-flex-me-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.db-flex-me-col > .db-pane {
+  flex-grow: 1;
+}
+
+.db-pane .db-input-group {
+  padding: 0 0.4em;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.db-pane:hover .db-input-group {
+  opacity: 1;
+}
