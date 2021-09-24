@@ -18,19 +18,73 @@
           <h1 class="display-1 db-title-row-2">Dashboard</h1>
         </div>
         <div class="db-pane" data-pane="notes">
-          <h1 class="display-6 db-pane-title">Notes</h1>
-          <div class="input-group mb-3 db-input-group">
-            <button type="button" class="btn btn-primary db-note-add" data-bs-enable="popover">&plus;</button>
-            <span class="input-group-text"><i class="bi bi-search"></i></span>
-            <input type="text" class="form-control" placeholder="Search notes" aria-label="Search notes">
+          <div class="d-flex w-100 justify-content-between align-middle">
+            <h1 class="display-6 db-pane-title">Notes</h1>
+            <div class="input-group ps-5 my-2 db-input-group">
+              <button type="button" class="btn btn-primary db-note-add" data-bs-enable="tooltip"
+                title="Adds a quick, one-line note."><i class="bi bi-lightning-fill"></i></button>
+              <button type="button" class="btn btn-primary db-note-add" data-bs-enable="tooltip"
+                title="Adds a multiline note."><i class="bi bi-journal"></i></button>
+              <span class="input-group-text"><i class="bi bi-search"></i></span>
+              <input type="text" class="form-control" placeholder="Search notes" aria-label="Search notes">
+            </div>
+          </div>
+          <div>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5>Note ABC</h5><small class="text-black-50">10 August 2021</small>
+                </div>Donec nec commodo dui, at tempus tortor. Suspendisse potenti. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.<span class="text-black-50 ms-2 db-fs-smaller">Tags: aaa, bb, ccccc,
+                  dddd</span>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5>Note ABC</h5><small class="text-black-50">10 August 2021</small>
+                </div>Donec nec commodo dui, at tempus tortor. Suspendisse potenti. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.<span class="text-black-50 ms-2 db-fs-smaller">Tags: aaa, bb, ccccc,
+                  dddd</span>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5>Note ABC</h5><small class="text-black-50">10 August 2021</small>
+                </div>Donec nec commodo dui, at tempus tortor. Suspendisse potenti. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.<span class="text-black-50 ms-2 db-fs-smaller">Tags: aaa, bb, ccccc,
+                  dddd</span>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5>Note ABC</h5><small class="text-black-50">10 August 2021</small>
+                </div>Donec nec commodo dui, at tempus tortor. Suspendisse potenti. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.<span class="text-black-50 ms-2 db-fs-smaller">Tags: aaa, bb, ccccc,
+                  dddd</span>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5>Note ABC</h5><small class="text-black-50">10 August 2021</small>
+                </div>Donec nec commodo dui, at tempus tortor. Suspendisse potenti. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.<span class="text-black-50 ms-2 db-fs-smaller">Tags: aaa, bb, ccccc,
+                  dddd</span>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="db-pane" data-pane="bookmarks">
-          <h1 class="display-6 db-pane-title">Bookmarks</h1>
-          <div class="input-group mb-3 db-input-group">
-            <button type="button" class="btn btn-primary db-bookmark-add" data-bs-enable="popover">&plus;</button>
-            <span class="input-group-text"><i class="bi bi-search"></i></span>
-            <input type="text" class="form-control" placeholder="Search bookmarks" aria-label="Search bookmarks">
+          <div class="d-flex w-100 justify-content-between align-middle">
+            <h1 class="display-6 db-pane-title">Bookmarks</h1>
+            <div class="input-group ps-5 my-2 db-input-group">
+              <button type="button" class="btn btn-primary db-bookmark-add" data-bs-enable="popover">&plus;</button>
+              <span class="input-group-text"><i class="bi bi-search"></i></span>
+              <input type="text" class="form-control" placeholder="Search bookmarks" aria-label="Search bookmarks">
+            </div>
+          </div>
+          <div>
+            <ul class="db-list-no-bullet">
+              <li><i class="bi bi-bookmark me-2"></i><a href="javascript:void;">Suspendisse potenti</a></li>
+              <li><i class="bi bi-bookmark me-2"></i><a href="javascript:void;">Suspendisse potenti</a></li>
+              <li><i class="bi bi-bookmark me-2"></i><a href="javascript:void;">Suspendisse potenti</a></li>
+              <li><i class="bi bi-bookmark me-2"></i><a href="javascript:void;">Suspendisse potenti</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -59,23 +113,89 @@
               Service Charlie
               <span class="text-black-50 ms-2 db-fs-smaller">Handles charlie things.</span>
             </li>
+            <li class="list-group-item d-flex align-items-center">
+              <span class="badge me-1 bg-danger rounded-pill">DEV</span>
+              <span class="badge me-1 bg-danger rounded-pill">TEST</span>
+              <span class="badge me-3 bg-danger rounded-pill">PROD</span>
+              Service Charlie
+              <span class="text-black-50 ms-2 db-fs-smaller">Handles charlie things.</span>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <span class="badge me-1 bg-danger rounded-pill">DEV</span>
+              <span class="badge me-1 bg-danger rounded-pill">TEST</span>
+              <span class="badge me-3 bg-danger rounded-pill">PROD</span>
+              Service Charlie
+              <span class="text-black-50 ms-2 db-fs-smaller">Handles charlie things.</span>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <span class="badge me-1 bg-danger rounded-pill">DEV</span>
+              <span class="badge me-1 bg-danger rounded-pill">TEST</span>
+              <span class="badge me-3 bg-danger rounded-pill">PROD</span>
+              Service Charlie
+              <span class="text-black-50 ms-2 db-fs-smaller">Handles charlie things.</span>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <span class="badge me-1 bg-danger rounded-pill">DEV</span>
+              <span class="badge me-1 bg-danger rounded-pill">TEST</span>
+              <span class="badge me-3 bg-danger rounded-pill">PROD</span>
+              Service Charlie
+              <span class="text-black-50 ms-2 db-fs-smaller">Handles charlie things.</span>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <span class="badge me-1 bg-danger rounded-pill">DEV</span>
+              <span class="badge me-1 bg-danger rounded-pill">TEST</span>
+              <span class="badge me-3 bg-danger rounded-pill">PROD</span>
+              Service Charlie
+              <span class="text-black-50 ms-2 db-fs-smaller">Handles charlie things.</span>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <span class="badge me-1 bg-danger rounded-pill">DEV</span>
+              <span class="badge me-1 bg-danger rounded-pill">TEST</span>
+              <span class="badge me-3 bg-danger rounded-pill">PROD</span>
+              Service Charlie
+              <span class="text-black-50 ms-2 db-fs-smaller">Handles charlie things.</span>
+            </li>
           </ul>
         </div>
         <div class="db-pane">
-          <h1 class="display-6 db-pane-title">Clocks</h1>
-          <div class="card mx-2 mb-1">
-            <div class="card-body">
-              <h4><i class="bi bi-clock me-2"></i>14:59:23 US/Central</h4>
-            </div>
-          </div>
-          <div class="card mx-2 mb-1">
-            <div class="card-body">
-              <h4><i class="bi bi-clock me-2"></i>19:59:23 GMT</h4>
-            </div>
-          </div>
-        </div>
-        <div class="db-pane">
-          <h1 class="display-6 db-pane-title">Tools</h1>
+          <h1 class="display-6 db-pane-title">Code Snippets</h1>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="d-flex w-100 justify-content-between align-middle">
+                <h5>Snippet A</h5>
+                <small class="text-black-50">Tags: AAA, BBB</small>
+              </div>
+              <span class="font-monospace">document.querySelectorAll('.foo-bar');</span>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex w-100 justify-content-between align-middle">
+                <h5>Snippet B</h5>
+                <small class="text-black-50">Tags: AAA, BBB</small>
+              </div>
+              <span class="font-monospace">document.querySelectorAll('.foo-bar');</span>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex w-100 justify-content-between align-middle">
+                <h5>Snippet C</h5>
+                <small class="text-black-50">Tags: AAA, BBB</small>
+              </div>
+              <span class="font-monospace">document.querySelectorAll('.foo-bar');</span>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex w-100 justify-content-between align-middle">
+                <h5>Snippet D</h5>
+                <small class="text-black-50">Tags: AAA, BBB</small>
+              </div>
+              <span class="font-monospace">document.querySelectorAll('.foo-bar');</span>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex w-100 justify-content-between align-middle">
+                <h5>Snippet E</h5>
+                <small class="text-black-50">Tags: AAA, BBB</small>
+              </div>
+              <span class="font-monospace">document.querySelectorAll('.foo-bar');</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -96,9 +216,9 @@
         return inputGrp;
       }
 
-      const popoverEnabledElements = Array.from(document.querySelectorAll('[data-bs-enable="popover"]'));
+      const popoverEnabledElements = Array.from(document.querySelectorAll('[data-bs-enable="tooltip"]'));
       popoverEnabledElements.map((el) => {
-        return new bootstrap.Popover(el, { container: 'body', html: true, content: makeContent });
+        return new bootstrap.Tooltip(el);
       });
     })();
   </script>

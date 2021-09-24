@@ -71,3 +71,7 @@ html, body {
 .db-pane:hover .db-input-group {
   opacity: 1;
 }
+
+.db-list-no-bullet {
+  list-style: none;
+}
